@@ -1,0 +1,10 @@
+[Unit]
+Description=ByteSentinel DNS Resolver
+After=network.target
+
+[Service]
+ExecStart=sudo /opt/bytesentinel/byteresolver/byteresolver
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

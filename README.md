@@ -3,13 +3,13 @@
 </div>
 
 <h1 align="center">
-  Name of repo
+  ByteDNS Resolver
 </h1>
 
 <div align="center">
-    <img src="https://img.shields.io/github/downloads/bytesentinel-io/go-template/total?style=for-the-badge" />
-    <img src="https://img.shields.io/github/last-commit/bytesentinel-io/go-template?color=%231BCBF2&style=for-the-badge" />
-    <img src="https://img.shields.io/github/issues/bytesentinel-io/go-template?style=for-the-badge" />
+    <img src="https://img.shields.io/github/downloads/bytesentinel-io/bytedns/total?style=for-the-badge" />
+    <img src="https://img.shields.io/github/last-commit/bytesentinel-io/bytedns?color=%231BCBF2&style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues/bytesentinel-io/bytedns?style=for-the-badge" />
 </div>
 
 <br />
@@ -25,7 +25,6 @@
 - [🧐 About](#about)
 - [🏁 Getting Started](#getting_started)
   - [💻 Prerequisites](#prerequisites)
-    - [🔐 Create a secure secret key](#create-a-secure-secret-key)
   - [🚀 Installing](#installing)
 - [📝 License](#license)
 - [📝 Acknowledgements](#acknowledgements)
@@ -59,7 +58,7 @@
 
 # 🧐 About <a name="about"></a>
 
-This project is a core API for ByteSentinel. It is a Node.js API that uses **Express.js**, **Sequelize ORM**, and **PostgreSQL**. It is a RESTful API that uses JWT for authentication and authorization. It is a boilerplate for future projects.
+This project is a nameserver written in Golang. It is designed to be a simple, lightweight, and easy to use your own nameserver. It is designed to be used with [ByteDNS](https://dns.bytesentinel.io) but can be used with any DNS provider.
 
 # 🏁 Getting Started <a name="getting_started"></a>
 
@@ -67,54 +66,11 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## 💻 Prerequisites <a name="prerequisites"></a>
 
-- [Node.js](https://nodejs.org/en/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Git](https://git-scm.com/)
-- [NPM](https://www.npmjs.com/)
-- [Yarn](https://yarnpkg.com/)
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Postman](https://www.postman.com/)
-- [VSCode](https://code.visualstudio.com/)
-
-### 🔐 Create a secure secret key <a name="create-a-secure-secret-key"></a>
-
-```bash
-openssl rand -hex 32
-```
+- [Golang](https://golang.org/dl/)
 
 ### 🚀 Installing <a name="installing"></a>
 
-Clone the repository
-
-```bash
-git clone https://github.com/bytesentinel-io/api.git
-```
-
-Install dependencies
-
-```bash
-npm install -g yarn
-yarn install
-```
-
-Create a `.env` file in the root directory and copy the contents of `.env.example` into it. Fill in the values.
-
-```bash
-cp .env.example .env
-```
-
-Start the PostgreSQL database
-
-```bash
-docker run --name bytesentinel_psql -e POSTGRES_DB=dbo.name -e POSTGRES_USER=username -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres:latest
-```
-
-Start the API
-
-```bash
-yarn dev
-```
+`COMING SOON`
 
 # 📝 License <a name="license"></a>
 
