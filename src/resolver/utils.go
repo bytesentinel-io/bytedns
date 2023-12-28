@@ -57,7 +57,7 @@ func IPv4ToBytes(ip net.IPAddr) []byte {
 	parts := strings.Split(ip.String(), ".")
 	bytes := make([]byte, len(parts))
 	for i, part := range parts {
-		b, _ := strconv.Atoi(part)
+		b, _ := strconv.ParseInt(part, 10, 8)
 		bytes[i] = byte(b)
 	}
 	return bytes
